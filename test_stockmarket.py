@@ -1,4 +1,3 @@
-from multiprocessing.sharedctypes import Value
 import unittest
 from stockmarket import StockMarket
 
