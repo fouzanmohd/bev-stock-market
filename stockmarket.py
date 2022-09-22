@@ -122,13 +122,13 @@ class StockMarket:
            allowed to be passed as an argument
 
         Args:
-            order (_type_): _description_
+            order (str): This is the trade type, whether the trade performed is sell order or buy order
 
         Raises:
-            ValueError: _description_
+            ValueError: If the input is not 'Sell' or 'Buy', a ValueError is raised
 
         Returns:
-            _type_: _description_
+            str: returns 'Buy' or 'Sell'
         """
         if order != "Buy" and order != "Sell":
             raise ValueError("Order should be either 'Sell' or 'Buy'")
